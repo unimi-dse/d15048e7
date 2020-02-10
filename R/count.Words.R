@@ -8,7 +8,7 @@ count.Words <- function(text){
   text_words <- text %>%
     unnest_tokens(word, text)
 
-  text_words <<- text_words %>%
+  text_words <- text_words %>%
     anti_join(stop_words)
 
   text_words %>%
