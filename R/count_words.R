@@ -1,9 +1,11 @@
-#' Counts the number of words used in the article and returns a graph
-#'
-#' You can use an element of the vector link to chose the articole you want to scrape
+#' @title The Economist count words
+#' @description Count the words of the selected article, use a stopword database imported from tidytext. Reorders the words and displays a graph.
+#' @details You can use an element of the vector link to chose the articole you want to scrape
 #' @param link is an element of the vector link or an url of The Economist
 #' @return A graph with the most used words, only the words that are used more than 3 times
+#' @examples  count_words("united-states/2020/02/11/donald-trump-loosens-americas-restrictions-on-landmines")
 #' @export
+#' @importFrom magrittr %>%
 count_words <- function(link){
   url <- paste0('https://www.economist.com/', link)
   url <- URLencode(url)

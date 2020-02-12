@@ -3,3 +3,4 @@
 export(count_words)
 export(get_links)
 export(get_text)
+importFrom(magrittr,"%>%")

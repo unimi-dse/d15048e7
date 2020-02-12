@@ -2,7 +2,7 @@
 % Please edit documentation in R/get_text.R
 \name{get_text}
 \alias{get_text}
-\title{Get the text of an articles chosen among The Economist homepage}
+\title{The Economist get text}
 \usage{
 get_text(link)
 }
@@ -13,5 +13,11 @@ get_text(link)
 A tibble of two variables the first one is the paragraph number and the second the text
 }
 \description{
+Scrape the text of the selected article
+}
+\details{
 You can use an element of the vector link to chose the articole you want to scrape
+}
+\examples{
+get_text("united-states/2020/02/11/donald-trump-loosens-americas-restrictions-on-landmines")
 }

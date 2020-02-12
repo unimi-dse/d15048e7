@@ -2,7 +2,7 @@
 % Please edit documentation in R/get_links.R
 \name{get_links}
 \alias{get_links}
-\title{Get Links of all the articles on The Economist homepage}
+\title{The Economist get links}
 \usage{
 get_links()
 }
@@ -10,5 +10,8 @@ get_links()
 A chr vector with all the links of the article
 }
 \description{
-Get Links of all the articles on The Economist homepage
+Scrape links of all the articles on The Economist homepage
+}
+\examples{
+ get_links()
 }
